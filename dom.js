@@ -100,12 +100,13 @@ dental.map(function(dato){
     return dato;
   });
   
- //imprimir resultado junto con rut asociado, separados por punto y coma.
+ //imprimir resultado dental junto con rut asociado, separados por punto y coma.
  document.write(`<h2>previsión cambiada y rut asociados</h2>`)
 for ( i = 0; i < dental.length; i++) {
+    var den = dental.join(";");
     var pr = dental[i].prevision;
     var rut = dental[i].rut;
-    
+   
     document.write(pr," ; ", rut + "<br>");
     
     
